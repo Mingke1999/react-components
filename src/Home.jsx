@@ -1,13 +1,18 @@
 import React from "react";
-import Parent from "./PassValue/Parent";
-import Child from "./PassValue/Child";
+import { Link } from "react-router-dom";
+import styles from './Home.module.css';
 
 export default function Home(){
     return(
-        <div className="home">
-            <h3>REACT KNOWLEDGE LIST</h3>
-            <Parent/>
-            <Child/>
+        <div>
+           <ul className={styles.menuList}>
+            <li>
+                <Link to={`/parent`}>Passing Value Between Components</Link>
+            </li>
+            <li>
+                <Link to={`/classcycle`}>React Components Lifecycles</Link>
+            </li>
+           </ul>
         </div>
     )
 }

@@ -5,6 +5,7 @@
 - naming css file name.module.css
 - import css file as styles and assign it to className
 ``` Javascript 
+    import styles from './path';
     <div className={styles.container}>
         <h3>Child</h3>
     </div> 

@@ -2,6 +2,7 @@ import React from "react";
 import { createBrowserRouter } from "react-router-dom";
 import Home from "./Home";
 import UseClass from "./Lifecycles/UseClass";
+import Parent from "./PassValue/Parent";
 
 const routes = createBrowserRouter([
     {
@@ -10,8 +11,13 @@ const routes = createBrowserRouter([
     },
     {
         path:'/classcycle',
-        element: <UseClass/>,
+        element: <UseClass title="lifecycles"/>,
     },
+    {
+        path:'parent',
+        element:<Parent/>
+
+    }
 ])
 
 export default routes
