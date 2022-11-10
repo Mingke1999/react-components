@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import styles from './child.module.css';
 
 class Child extends Component {
     render() {
         return (
-            <div>
+            <div className={styles.container}>
                 <h3>Child</h3>
             </div>
         );
