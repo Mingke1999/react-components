@@ -12,6 +12,7 @@
     </div> 
 ```
 [Lifting-state-up](https://reactjs.org/docs/lifting-state-up.html)
+> 0. definition: several components need to reflect the same changing data. We recommend lifting the shared state up to their closest common ancestor
 > 1. props: parent to children
 > 2. props.functions: child to the parent.
 ```Javascript

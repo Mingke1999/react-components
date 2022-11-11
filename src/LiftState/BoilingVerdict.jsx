@@ -1,6 +1,8 @@
 import React from 'react';
 /**
- * checking if water is boiling by props.temp
+ * check if water is boiling
+ * @param {*} props.celsius velsius input from user or converted by fahrenheit
+ * @returns judgement
  */
 function BoilingVerdict(props) {
     if (props.celsius >= 100) 
