@@ -68,6 +68,7 @@ export default class UseClass extends React.Component{
                 <p>{this.state.count}</p>
                 <button onClick={this.switchUpdate}>Switch</button>
                 <p>shouldComponentUpdate:{this.state.enabled.toString()}</p>
+                <p>{this.props.children}</p>
             </div>
         )
     }

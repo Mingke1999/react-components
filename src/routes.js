@@ -1,10 +1,12 @@
-import React from "react";
+import React,{Suspense} from "react";
 import { createBrowserRouter } from "react-router-dom";
 import Home from "./Home";
 import UseClass from "./Lifecycles/UseClass";
-import Parent from "./PassValue/Parent";
+//import Parent from "./PassValue/Parent";
 import Calculator from "./LiftState/Calculator";
 
+const Parent = React.lazy(()=>import('./PassValue/Parent'));
+//only import component when it is needed
 const routes = createBrowserRouter([
     {
         path:'/',
@@ -12,11 +14,15 @@ const routes = createBrowserRouter([
     },
     {
         path:'/classcycle',
-        element: <UseClass title="lifecycles"/>,
+        element: <UseClass title="lifecycles">
+            <p>Composition: Slot in VUE</p>
+        </UseClass>,
     },
     {
         path:'/parent',
-        element:<Parent/>
+        element:<Suspense fallback={<div>Loading...</div>}>
+            <Parent/>
+        </Suspense>
 
     },
     {
