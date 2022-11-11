@@ -20,6 +20,7 @@ export default class UseClass extends React.Component{
     /**
      * Updating 2.1
      * comparing this.state === prevProps, this.state === prevState
+     * provide parameter to compare difference between the current and prev
      */
     getSnapshotBeforeUpdate(prevProps,prevState){
         console.log("getSnapshotBeforeUpdate")
@@ -29,6 +30,7 @@ export default class UseClass extends React.Component{
     /**
      * Updating 2.5
      * comparing this.state === nextProps, this.state === nextState
+     * return true -> component update otherwise doesn't
      */
     shouldComponentUpdate(nextProps,nextState){
         return this.state.enabled

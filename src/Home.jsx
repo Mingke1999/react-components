@@ -12,6 +12,9 @@ export default function Home(){
             <li>
                 <Link to={`/classcycle`}>React Components Lifecycles</Link>
             </li>
+            <li>
+                <Link to={`/calculator`}>Lifting State Up</Link>
+            </li>
            </ul>
         </div>
     )

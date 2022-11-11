@@ -3,6 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Home from "./Home";
 import UseClass from "./Lifecycles/UseClass";
 import Parent from "./PassValue/Parent";
+import Calculator from "./LiftState/Calculator";
 
 const routes = createBrowserRouter([
     {
@@ -14,9 +15,13 @@ const routes = createBrowserRouter([
         element: <UseClass title="lifecycles"/>,
     },
     {
-        path:'parent',
+        path:'/parent',
         element:<Parent/>
 
+    },
+    {
+        path:'/calculator',
+        element:<Calculator/>
     }
 ])
 

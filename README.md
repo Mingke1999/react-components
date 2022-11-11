@@ -10,3 +10,15 @@
         <h3>Child</h3>
     </div> 
 ```
+[Lifting-state-up](https://reactjs.org/docs/lifting-state-up.html)
+> 1. props: parent to children
+> 2. props.functions: child to the parent.
+```Javascript
+//parent
+ getChildValue = (msg) =>{
+        console.log("from the parent: ", msg)
+    }
+<Child message="Hello From The parent" onChild={this.getChildValue}/>
+//children
+this.props.onChild(this.state.childValue)
+```
