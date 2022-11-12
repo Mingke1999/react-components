@@ -28,3 +28,6 @@ this.props.onChild(this.state.childValue)
 > 1. only render component when element changes detected,
 - 1.1 use shouldComponentUpdate()
 - 1.2 class extends React.PureComponent
+> 2. Cancel Timer: when component is destroyed
+> 3. Network Request: Cancel network request
+> 4. Event Listener: destroy event handle function
