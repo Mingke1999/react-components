@@ -24,3 +24,7 @@
 //children
 this.props.onChild(this.state.childValue)
 ```
+[Optimizing](https://reactjs.org/docs/optimizing-performance.html)
+> 1. only render component when element changes detected,
+- 1.1 use shouldComponentUpdate()
+- 1.2 class extends React.PureComponent

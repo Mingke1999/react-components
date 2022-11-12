@@ -9,8 +9,14 @@ class Child extends Component {
     triggerParent = () =>{
         this.props.onChild(this.state.childValue)
     }
+    shouldComponentUpdate(nextProps,nextState){
+        if(nextProps.message===this.props.message){
+            return false;
+        }
+        return true;
+    }
     render() {
-       
+        //console.log("Child-> render")
         return (
             <div className={styles.container}>
                 <h3>Child</h3>

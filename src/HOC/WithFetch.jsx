@@ -14,7 +14,7 @@ const WithFetch = (url) => (Component) =>{
                 loading:true
             }
         }
-       
+        //basic element will be loaded first and then loading status is true
         render(){
            if(this.state.loading){
                 return(
@@ -26,6 +26,7 @@ const WithFetch = (url) => (Component) =>{
                 )
            } 
         }
+        //after rendering, start to fetch services
         componentDidMount(){
             //console.log("I AM THE REPEAT ELEMENT BETWEEN COMPONENTS")
             fetch(url).then(res=>res.json())
@@ -33,6 +34,7 @@ const WithFetch = (url) => (Component) =>{
                 //console.log(data.$values)
                 this.setState({
                     services:data.$values,
+                    //once success loading status false
                     loading:false
                 })
             })

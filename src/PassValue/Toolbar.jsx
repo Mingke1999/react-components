@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Consumer } from './Parent';
-class Toolbar extends Component {
+class Toolbar extends React.PureComponent {
     constructor(){
         super();
         this.title = React.createRef(); //create a ref to specific element
