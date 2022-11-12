@@ -15,6 +15,9 @@ export default function Home(){
             <li>
                 <Link to={`/calculator`}>Lifting State Up</Link>
             </li>
+            <li>
+                <Link to={`/hoc`}>High Order Component</Link>
+            </li>
            </ul>
         </div>
     )
