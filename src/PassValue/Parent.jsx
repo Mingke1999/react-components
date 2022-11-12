@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import styles from './parent.module.css';
 import Child from './Child';
-class Parent extends Component {
+export const {Provider,Consumer} = React.createContext('default message')
+//passing value to sub-layers, which would reduce component's reusable
+export default class Parent extends Component {
     constructor(){
         super();
         this.state = {
@@ -18,11 +20,11 @@ class Parent extends Component {
         return (
             <div className={styles.container}>
                 <h3>Parent</h3>
-                <Child message="Hello From The parent" onChild={this.getChildValue}/>
+                <Provider value='dark'>
+                    <Child message="Hello From The parent" onChild={this.getChildValue}/>
+                </Provider>
                 <p>{this.state.message}</p>
             </div>
         );
     }
 }
-
-export default Parent;
