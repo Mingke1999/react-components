@@ -31,3 +31,12 @@ this.props.onChild(this.state.childValue)
 > 2. Cancel Timer: when component is destroyed
 > 3. Network Request: Cancel network request
 > 4. Event Listener: destroy event handle function
+
+[redux](https://react-redux.js.org)
+> npm install --save redux
+> npm install --save react-redux
+> npm install --save redux-devtools-extension
+1. store: storage of status (one project one store)
+2. state: current data
+3. reducers: define the way how app responses to action and sent to store
+4. action: passing data from view to store, store->reducer, ->store

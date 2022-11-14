@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 /**
  * High order component
  * 1. must be a fuunction

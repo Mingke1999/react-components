@@ -43,6 +43,10 @@ export default class Home extends Component{
                 <li>
                     <Link to={`/hoc`}>High Order Component</Link>
                 </li>
+                <li>
+                    <Link to={`/reduxs`}>Redux Demo</Link>
+                </li>
+                
                </ul>
             </div>
         )
