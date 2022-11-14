@@ -41,7 +41,8 @@ const routes = createBrowserRouter([
     {
         path:'/reduxs',
         element:<ReduxClass/>
-    }
+    },
+
 ])
 export default routes;
 /**
