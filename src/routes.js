@@ -7,6 +7,7 @@ import UseClass from "./Lifecycles/UseClass";
 import Calculator from "./LiftState/Calculator";
 import ShowServices from "./HOC/ShowServices";
 import ReduxClass from "./Redux/ReduxClass";
+import UseHook from "./Hook/UseHook";
 
 const Parent = React.lazy(()=>import('./PassValue/Parent')); //only import component when it is needed
 /**
@@ -41,6 +42,10 @@ const routes = createBrowserRouter([
     {
         path:'/reduxs',
         element:<ReduxClass/>
+    },
+    {
+        path:'/hook',
+        element:<UseHook/>
     },
 
 ])

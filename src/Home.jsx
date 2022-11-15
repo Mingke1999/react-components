@@ -46,7 +46,9 @@ export default class Home extends Component{
                 <li>
                     <Link to={`/reduxs`}>Redux Demo</Link>
                 </li>
-                
+                <li>
+                    <Link to={`/hook`}>Hook Knowledges</Link>
+                </li>
                </ul>
             </div>
         )

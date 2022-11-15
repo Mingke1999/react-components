@@ -48,3 +48,9 @@ this.props.onChild(this.state.childValue)
 [lodash](https://lodash.com/docs/4.17.15#find)
 > npm install --save lodash
 
+[Hook](https://reactjs.org/docs/hooks-reference.html)
+1. Only Call Hooks at the Top Level
+2. naming convention, start with 'Use'
+
+[Redux Toolkit](https://redux.js.org/tutorials/quick-start)
+> npm install @reduxjs/toolkit react-redux
