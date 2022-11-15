@@ -36,8 +36,8 @@ this.props.onChild(this.state.childValue)
 > npm install --save redux
 > npm install --save react-redux
 > npm install --save redux-devtools-extension
-> npm install --save redux-logger //printing
-> npm install --save redux-thunk //async
+> npm install --save redux-logger
+> npm install --save redux-thunk
 
 1. store: storage of states (one project one store), state: current data
 2. reducers: define the way how app responses to action(action.type) and sent to the global store
