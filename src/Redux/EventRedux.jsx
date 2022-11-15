@@ -9,11 +9,13 @@ class EventRedux extends Component {
             id:Math.floor(Math.random()*1000),
             name:'Mam Cook'
         })
+        //this.props.eventActions.asyncGetEvent("https://eventeasynew.azurewebsites.net/api/Event/GetAll");
     }
     delEvent = (id) =>{
         this.props.eventActions.delEvent(id)
     }
     render() {
+        //console.log(this.props.event,'event')
         return (
             
             <div>
@@ -23,7 +25,7 @@ class EventRedux extends Component {
                     {
                         this.props.event.map((ele)=>{
                             return <li key={ele.id}>
-                                    <span>{ele.name}-{ele.id}</span>
+                                    <span>{ele.namee}-{ele.id}</span>
                                     <button onClick={()=>{this.delEvent(ele.id)}}>Delete</button>
                                 </li>  
                         

@@ -36,7 +36,14 @@ this.props.onChild(this.state.childValue)
 > npm install --save redux
 > npm install --save react-redux
 > npm install --save redux-devtools-extension
-1. store: storage of status (one project one store)
-2. state: current data
-3. reducers: define the way how app responses to action and sent to store
-4. action: passing data from view to store, store->reducer, ->store
+> npm install --save redux-logger //printing
+> npm install --save redux-thunk //async
+1. store: storage of states (one project one store), state: current data
+2. reducers: define the way how app responses to action(action.type) and sent to the global store
+3. action: passing data from view to store
+4. mapStateToProps readOnly, mapDispatchToProps write
+5. dispatch shortcut: bindActionCreators
+
+[lodash](https://lodash.com/docs/4.17.15#find)
+> npm install --save lodash
+

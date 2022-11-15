@@ -8,7 +8,7 @@ const initState = [
 ]
 
 //var arr = [1,2,3]
-//[...Array,4] = [1,2,3,4]
+//[...arr,4] = [1,2,3,4]
 export default function event(state=initState,action){
     switch(action.type){
         case 'newEvent':
